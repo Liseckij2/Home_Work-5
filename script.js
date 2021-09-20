@@ -1,6 +1,7 @@
 let start;
 let addnumber;
 let arr = [];
+let count = 0;
 
 do {
     start = +prompt('How many elements in massive you want?\nmin 5 simbols\nmax 20 simbols');
@@ -9,7 +10,8 @@ do {
 function addInMassiveNumbers(start) {
 
 do {
-    addnumber = +prompt('Send number for add in massive');
+    addnumber = +prompt(`Send number for add in massive ${count}`);
+    count = count + 1;
     start = start - 1;
     arr.push(addnumber);
 
