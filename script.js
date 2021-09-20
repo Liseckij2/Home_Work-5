@@ -1,14 +1,15 @@
+function thisFoo(params) {
 let start;
 let addnumber;
 let arr = [];
 let count = 1;
 
-do {
-    start = +prompt('How many elements in massive you want?\nmin 5 simbols\nmax 20 simbols');
-} while (start < 5 || start > 20 || start !== start);
-
 function addInMassiveNumbers(start) {
 
+    do {
+        start = +prompt('How many elements in massive you want?\nmin 5 simbols\nmax 20 simbols');
+    } while (start < 5 || start > 20 || start !== start);
+    
 do {
 
     do {
@@ -36,5 +37,7 @@ function SelectionSort(arr)
   console.log(arr);   // На выходе сортированный по возрастанию массив . 
   
 } ;
-addInMassiveNumbers(start);
-SelectionSort(arr);
+
+return addInMassiveNumbers(start), SelectionSort(arr);
+}
+thisFoo();
