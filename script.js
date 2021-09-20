@@ -30,7 +30,7 @@ function SelectionSort(arr)
        var t = arr[min]; arr[min] = arr[ i ]; arr[ i ] = t; 
      }                     
   alert(`Add massive result: ${arr}`); 
-  console.log(arr);   // На выходе сортированный по возрастанию массив A. 
+  console.log(arr);   // На выходе сортированный по возрастанию массив. 
   
 } ;
 addInMassiveNumbers(start);
