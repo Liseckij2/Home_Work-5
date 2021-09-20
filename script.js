@@ -3,7 +3,7 @@ let addnumber;
 let arr = [];
 
 do {
-    start = +prompt('How many elements in massive you want?\n min 5 simbols\n max 20 simbols');
+    start = +prompt('How many elements in massive you want?\nmin 5 simbols\nmax 20 simbols');
 } while (start < 5 || start > 20 || start !== start);
 
 function addInMassiveNumbers(start) {
@@ -27,7 +27,7 @@ function SelectionSort(arr)
         { if (arr[j] < arr[min]) min = j; }  
        var t = arr[min]; arr[min] = arr[ i ]; arr[ i ] = t; 
      }                     
-  alert(`Add massive result ${arr}`); 
+  alert(`Add massive result: ${arr}`); 
   console.log(arr);   // На выходе сортированный по возрастанию массив A. 
   
 } ;
