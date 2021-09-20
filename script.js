@@ -1,7 +1,7 @@
 let start;
 let addnumber;
 let arr = [];
-let count = 0;
+let count = 1;
 
 do {
     start = +prompt('How many elements in massive you want?\nmin 5 simbols\nmax 20 simbols');
