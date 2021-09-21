@@ -16,8 +16,8 @@ do {
     addnumber = +prompt(`Send number for add in massive ${count}`);
     } while (addnumber !== addnumber);
 
-    count = count + 1;
-    start = start - 1;
+    count++;
+    start--;
     arr.push(addnumber);
 
 } while (start >= 1);
@@ -33,11 +33,10 @@ function SelectionSort(arr)
         { if (arr[j] < arr[min]) min = j; }  
        var t = arr[min]; arr[min] = arr[ i ]; arr[ i ] = t; 
      }                     
-  alert(`Add massive result: ${arr}`); 
-  console.log(arr);   // На выходе сортированный по возрастанию массив . 
+     console.log(arr);   // На выходе сортированный по возрастанию массив . 
+    return alert(`Add massive result: ${arr}`); 
   
-} ;
-
-return addInMassiveNumbers(start), SelectionSort(arr);
 }
+return addInMassiveNumbers(start), SelectionSort(arr);
+};
 thisFoo();
