@@ -1,4 +1,4 @@
-function thisFoo(params) {
+function thisFoo() {
 let start;
 let addnumber;
 let arr = [];
@@ -35,7 +35,6 @@ function SelectionSort(arr)
      }                     
      console.log(arr);   // На выходе сортированный по возрастанию массив . 
     return alert(`Add massive result: ${arr}`); 
-  
 }
 return addInMassiveNumbers(start), SelectionSort(arr);
 };
