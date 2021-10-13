@@ -1,11 +1,11 @@
-
+    
 function addInMassiveNumbers() {
   let start;
-  let count = 1;
-  let arr = [];
   do {
       start = +prompt("How many elements in massive you want?\nmin 5 simbols\nmax 20 simbols");
   } while (start < 5 || start > 20 || start !== start);
+  let count = 1;
+  let arr = [];
   do {
   let addNumber;
   do {
@@ -29,3 +29,4 @@ function addInMassiveNumbers() {
     return arr;
 }
 addInMassiveNumbers();
+
